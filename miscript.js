@@ -5,7 +5,7 @@
     every time i click the button*/
     cambioDeColor.addEventListener('click', ()=>{
         /*function to generate HEX color*/
-        function generarCodigoHex(longitud){
+        generarCodigoHex = (longitud) =>{
             /*first i declare 2 variables with empty string*/
             let codigoHex = "";
             let codigoHex2 = "";
