@@ -1,1 +1,101 @@
-
+:root{
+    --facebook1: #3b5998;
+    --facebook2: #8b9dc3;
+    --facebook3: #dfe3ee;
+    --facebook4: #f7f7f7;
+    --facebook5: #ffffff;
+    --google1: #008744;
+    --google2: #0057e7;
+    --google3: #d62d20;
+    --google4: #ffa700;
+    --grifindorf1: #740001;
+    --grifindorf2: #ae0001;
+    --grifindorf3: #eeba30;
+    --grifindorf4: #d3a625;
+    --grifindorf5: #000000;
+    --redorange1: #ffc100;
+    --redorange2: #ff9a00;
+    --redorange3: #ff7400;
+    --redorange4: #ff4d00;
+    --redorange5: #ff0000;
+    --pastel1: #ffb3ba;
+    --pastel2: #ffdfba;
+    --pastel3: #ffffba;
+    --pastel4: #baffc9;
+    --pastel5: #bae1ff;
+    --shadeofsteel1: #b2d8d8;
+    --shadeofsteel2: #66b2b2;
+    --shadeofsteel3: #008080;
+    --shadeofsteel4: #006666;
+    --shadeofsteel5: #004c4c;
+    --redwind1: #800000;
+    --redwind2: #8c1919;
+    --redwind3: #993232;
+    --redwind4: #a64c4c;
+    --redwind5: #b26666;
+    --redwind6: #bf7f7f;
+    --redwind7: #cc9999;
+    --redwind8: #d8b2b2;
+    --redwind9: #e5cccc;
+    --redwind0: #f2e5e5;
+    font-family: 'Inconsolata', monospace, 'Prompt', sans-serif;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: max-content;
+}
+.container{
+    margin: auto;
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#colores-hex{
+    text-align: center;
+}
+h1{
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.2rem;
+}
+h2{
+    font-family: 'Inconsolata', monospace;
+}
+.btn{
+    height: 2.2rem;
+    width: 6rem;
+    font-size: 1.3rem;
+    opacity: 0.7;
+    font-weight: 600;
+}
+.btn:hover{
+    background: rgb(243, 202, 202);
+    opacity: 0.5;
+}
+#titulo, #subtitulo{
+    color: var(--grifindorf5);
+    animation: cambiando 10s linear -2s infinite;
+}
+@keyframes cambiando {
+    0% {color: var(--grifindorf5)}
+    10% {color: var(--grifindorf1)}
+    20% {color: var(--grifindorf2)}
+    30% {color: var(--grifindorf3)}
+    40% {color: var(--grifindorf4)}
+    50% {color: var(--redorange1)}
+    60% {color: var(--redwind6)}
+    70% {color: var(--redwind8)}
+    80% {color: var(--shadeofsteel3)}
+    90% {color: var(--pastel4)}
+    100% {color: var(--facebook5)}
+}
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 1.5rem;
+    }
+}
